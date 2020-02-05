@@ -1,0 +1,108 @@
+:root {
+    --primary-color:  #c72727;
+    --secondary-color: #f99500;
+    --light-color:  #99daff;
+    --dark-color: #333;
+    --max-width:  1100px;
+    }
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: 'Staatliches', cursive;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    background: var(--light-color);
+}
+
+a {
+    text-decoration: none;
+    color: #333;  
+}
+
+ul  {
+    list-style: none;
+}
+
+/* Utilities */
+.container  {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* NavBar */
+#navbar {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#navbar .container  {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+#navbar .logo  {
+    width: 180px;
+}
+
+#navbar .container ul {
+    justify-self: end;
+    display: flex;
+}
+
+#navbar .container ul li a {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#navbar .container ul li a.current {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+#navbar .container ul li a:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+    transition: all .2s ease-in-out;
+}
+/* 
+#navbar .social {
+    justify-self: center;
+}
+
+#navbar .social i {
+    color: #777;
+    margin-right: .5rem;
+}
+
+#navbar .social a:hover {
+    color: var(--light-color);
+} */
+
+
+#navbar .icon {
+    justify-self: center;
+}
+
+#navbar .icon i {
+    color: #777;
+    margin-right: 0.4rem;
+}
+
+#navbar .icon i:hover {
+    color: var(--light-color);
+    transform: scale(1.2);
+    transition: all .1s ease-in-out;
+}
+
